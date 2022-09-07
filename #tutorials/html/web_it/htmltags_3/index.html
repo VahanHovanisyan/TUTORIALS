@@ -1,70 +1,86 @@
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!-- Բրաուզերին ասեք, թե ինչպես վարվի այս էջը -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
+<!-- Փաստաթղթի փաթեթավորում, նշեք բովանդակության լեզուն -->
 <html lang="ru">
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<!-- Էջի վերնագիր, այլ կարևոր տվյալների կոնտեյներ (չի ցուցադրվում) -->
 	<head>
 		<!-- Заголовок страницы в браузере -->
-		<title>Знакомство с HTML тегами. Часть №3 (Формы)</title>
+		<!-- Էջի անվանումը դիտարկիչում -->
+		<title>HTML թեգերի ներածություն. Մաս #3 (ձևաթղթեր)</title>
 		<!-- Кодировка страницы -->
+		<!-- Էջի կոդավորում -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	</head>
 	<!-- Отображаемое тело страницы -->
+	<!-- Ցուցադրել էջի հիմնական մասը -->
 	<body>
 		<form action="#" method="post" enctype="multipart/form-data">
 			<div>
-				<p>Имя</p>
+				<p>Անուն</p>
 				<input placeholder="Имя" tabindex="1" name="username" type="text" />
 			</div>
 			<div>
-				<p>Пароль</p>
+				<p>Գաղտնաբառ</p>
 				<input tabindex="2" name="userpass" type="password" />
 			</div>
 			<div>
-				<p>Телефон</p>
+				<p>Հեռախոս</p>
 				<input tabindex="3" name="userphone" type="tel" />
 			</div>
 			<div>
-				<p>Пол</p>
+				<p>սեռ</p>
 				<div>
-					<input tabindex="4" checked type="radio" name="gender" value="male" /> Мужской
+					<input tabindex="4" checked type="radio" name="gender" value="male" /> Արական
 				</div>
 				<div>
-					<input tabindex="4" type="radio" name="gender" value="female" /> Женский
-				</div>
-			</div>
-			<div>
-				<p>Имущество</p>
-				<div>
-					<input tabindex="5" checked type="checkbox" name="bike" value="yes" /> Велик
-				</div>
-				<div>
-					<input tabindex="6" type="checkbox" name="car" value="yes" /> Машина
-				</div>
-				<div>
-					<input tabindex="7" disabled type="checkbox" name="house" value="yes" /> Дом
+					<input tabindex="4" type="radio" name="gender" value="female" /> իգական
 				</div>
 			</div>
 			<div>
-				<p>Дополнительная информация</p>
+				<p>Սեփականություն</p>
+				<div>
+					<input tabindex="5" checked type="checkbox" name="bike" value="yes" /> Հեծանիվ
+				</div>
+				<div>
+					<input tabindex="6" type="checkbox" name="car" value="yes" /> Ավտոմեքենա
+				</div>
+				<div>
+					<input tabindex="7" disabled type="checkbox" name="house" value="yes" /> Տուն
+				</div>
+			</div>
+			<div>
+				<p>
+					ополнительная информация
+					լրացուցիչ տեղեկություն
+				</p>
 				<textarea tabindex="8" name="text"></textarea>
 			</div>
 			<div>
-				<p>Прикрепить фото</p>
+				<p>
+					рикрепить фото
+					Կցել լուսանկարը
+				</p>
 				<input tabindex="9" type="file" />
 			</div>
 			<div>
-				<p>Любимый цвет</p>
+				<p>
+					Любимый цвет
+					Սիրած գույն
+					
+				</p>
 				<select tabindex="10" name="color">
-					<option value="red">Красный</option>
-					<option value="green">Зеленый</option>
-					<option selected value="yellow">Желтый</option>
+					<option value="red">Կարմիր</option>
+					<option value="green">Կանաչ</option>
+					<option selected value="yellow">դեղին</option>
 				</select>
 			</div>
 			<div>
 				<p>Действия</p>
-				<button tabindex="11" type="submit">Отправить</button>
-				<button tabindex="12" type="reset">Очистить</button>
+				<button tabindex="11" type="submit">ւղարկել</button>
+				<button tabindex="12" type="reset">ջնջել</button>
 			</div>
 		</form>
 	</body>
